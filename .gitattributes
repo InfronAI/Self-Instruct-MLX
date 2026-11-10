@@ -1,0 +1,2 @@
+# Preserve generated chart bytes so recorded artifact hashes remain valid.
+experiments/**/analysis.svg -whitespace linguist-generated=true

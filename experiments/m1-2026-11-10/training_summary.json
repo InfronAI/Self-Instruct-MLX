@@ -1,0 +1,10 @@
+{
+  "iterations": 20,
+  "trainable_parameters": 155648,
+  "elapsed_seconds": 13.19214391685091,
+  "peak_memory_gb": 1.80719975,
+  "batch_size": 1,
+  "max_seq_length": 512,
+  "adapter_sha256": "c77ccdcf59974dfac667a73aa60786b44d91faa6a97a3b1a444de34a299b3221",
+  "adapter_reloaded": true
+}

@@ -1,0 +1,29 @@
+{
+  "base": {
+    "examples": 8,
+    "rouge_l": 0.19367865169925394,
+    "exact_match": 0.0,
+    "nonempty_rate": 1.0,
+    "truncated_outputs": 6,
+    "test_loss": 4.209107875823975,
+    "perplexity": 67.2964762086177,
+    "loss_examples": 8
+  },
+  "adapted": {
+    "examples": 8,
+    "rouge_l": 0.20479858975644005,
+    "exact_match": 0.0,
+    "nonempty_rate": 1.0,
+    "truncated_outputs": 6,
+    "test_loss": 3.321096658706665,
+    "perplexity": 27.69070116187108,
+    "loss_examples": 8
+  },
+  "delta": {
+    "test_loss": -0.8880112171173096,
+    "perplexity": -39.60577504674663,
+    "rouge_l": 0.011119938057186113,
+    "exact_match": 0.0
+  },
+  "method": "Greedy decoding; identical held-out seed tasks and prompts; assistant-only token loss. ROUGE-L and exact match are lexical proxies, not human judgments. Loss excludes overlength examples; generation includes all held-out examples."
+}

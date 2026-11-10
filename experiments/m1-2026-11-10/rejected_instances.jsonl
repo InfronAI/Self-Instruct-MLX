@@ -1,0 +1,7 @@
+{"task_id": "generated_0000", "reason": "no_valid_instances", "request_key": "d9f12961397ad57eb82a4a0b30921666577ea020f951aee259073580b90265d5"}
+{"task_id": "generated_0003", "reason": "no_valid_instances", "request_key": "551c286adb47a3bd4b7ab868074e9e492893bb41428b3d960d296a4ab87de3ef"}
+{"task_id": "generated_0006", "reason": "invalid_instance", "instance": {"instruction": "Design a user interface for a simple calculator app using HTML and CSS.", "input": "1", "output": "1"}}
+{"task_id": "generated_0007", "reason": "no_valid_instances", "request_key": "7569e604adb00548e1d765641edc01081274d883b50384c94d5763c7f9160366"}
+{"task_id": "generated_0009", "reason": "no_valid_instances", "request_key": "e79c8d0be45edf0ba5a28faa380f055e2c82f2c815c08788649877a599a2e310"}
+{"task_id": "generated_0010", "reason": "no_valid_instances", "request_key": "0e8b59be019d2a459d1325c80cd864fff3706b25c89e37e6dadb2d70c6514cbf"}
+{"task_id": "generated_0011", "reason": "no_valid_instances", "request_key": "819a5dbf37eb8b6b2e1b254bc3e9f66d491ee2fbd187680a6535cb5371322b70"}

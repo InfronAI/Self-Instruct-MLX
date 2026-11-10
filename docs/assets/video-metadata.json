@@ -1,0 +1,12 @@
+{
+  "resolution": [
+    1440,
+    900
+  ],
+  "fps": 10,
+  "duration_seconds": 47.2,
+  "source_duration_seconds": 150.6526,
+  "cast_sha256": "50703683efa93ade6c7265ec01b45f3e7ec6d140ac168d290938854715c5457e",
+  "video_sha256": "c98afbadaf7db997e9174c881ef236dbe540ca5f085219930c455186dae5ec3a",
+  "timing": "Intervals divided by 8, clamped to 0.35–2.2 s; commands/final frame held longer."
+}

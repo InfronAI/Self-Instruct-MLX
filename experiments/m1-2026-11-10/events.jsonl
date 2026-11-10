@@ -1,0 +1,48 @@
+{"time": "2026-11-10T10:02:36.403454+00:00", "stage": "instructions", "message": "Bootstrapping 12 tasks from 151 training seeds"}
+{"time": "2026-11-10T10:02:40.324272+00:00", "stage": "instructions", "message": "Round 1: 4/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:02:41.300368+00:00", "stage": "instructions", "message": "Round 2: 8/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:02:42.283120+00:00", "stage": "instructions", "message": "Round 3: 12/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:02:43.138679+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 72 (char 71)", "request_key": "feb231d5d05ebe84485531e305ec0e42bd778257395543562bfa8b7a15af48ea"}
+{"time": "2026-11-10T10:02:43.769633+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 95 (char 94)", "request_key": "d9f12961397ad57eb82a4a0b30921666577ea020f951aee259073580b90265d5"}
+{"time": "2026-11-10T10:02:43.770430+00:00", "stage": "instances", "message": "Task 1/12: output-first; 0 examples retained"}
+{"time": "2026-11-10T10:02:45.373043+00:00", "stage": "instances", "message": "Task 2/12: input-first; 2 examples retained"}
+{"time": "2026-11-10T10:02:46.996609+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 440 (char 439)", "request_key": "3a8eef1c03e855fbf02a54eed618a1fbccad200bf3723aea2e1f55d4682d2280"}
+{"time": "2026-11-10T10:02:47.927741+00:00", "stage": "instances", "message": "Task 3/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:02:49.751636+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 331 (char 330)", "request_key": "10f482c12502a8e6e591b49a584ae057504f906a22f3f8802a7303b1425d827e"}
+{"time": "2026-11-10T10:02:51.526489+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 331 (char 330)", "request_key": "551c286adb47a3bd4b7ab868074e9e492893bb41428b3d960d296a4ab87de3ef"}
+{"time": "2026-11-10T10:02:51.527518+00:00", "stage": "instances", "message": "Task 4/12: input-first; 0 examples retained"}
+{"time": "2026-11-10T10:02:52.364495+00:00", "stage": "instances", "message": "Task 5/12: input-first; 2 examples retained"}
+{"time": "2026-11-10T10:02:53.031561+00:00", "stage": "classification", "message": "Response rejected: truncated_response", "request_key": "e2093852ac5d0e2d351e816a1f55ed4c0b8f4b7e28098204ba5d0272db5bec03"}
+{"time": "2026-11-10T10:02:53.968666+00:00", "stage": "instances", "message": "Task 6/12: output-first; 1 examples retained"}
+{"time": "2026-11-10T10:02:54.596198+00:00", "stage": "instances", "message": "Task 7/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:02:55.205586+00:00", "stage": "classification", "message": "Response rejected: Expecting value: line 1 column 1 (char 0)", "request_key": "c28add999ff26f569c194943498566efd47db037b588f21d8dd919887506ba36"}
+{"time": "2026-11-10T10:02:56.352540+00:00", "stage": "instances", "message": "Response rejected: Invalid control character at: line 4 column 77 (char 101)", "request_key": "ea7668cb2ad49ea6bd31e28584192bdc6d9e92bfb00c951fc0a62da925b6adb1"}
+{"time": "2026-11-10T10:02:57.220880+00:00", "stage": "instances", "message": "Response rejected: Invalid control character at: line 4 column 77 (char 101)", "request_key": "7569e604adb00548e1d765641edc01081274d883b50384c94d5763c7f9160366"}
+{"time": "2026-11-10T10:02:57.221876+00:00", "stage": "instances", "message": "Task 8/12: input-first; 0 examples retained"}
+{"time": "2026-11-10T10:02:58.110273+00:00", "stage": "instances", "message": "Task 9/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:02:59.421454+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 293 (char 292)", "request_key": "67da87b84dc5cad69e4f3ac5fefe8e2283cf8243b095384d0cef4b7ebbd04a25"}
+{"time": "2026-11-10T10:03:00.637917+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 293 (char 292)", "request_key": "e79c8d0be45edf0ba5a28faa380f055e2c82f2c815c08788649877a599a2e310"}
+{"time": "2026-11-10T10:03:00.639020+00:00", "stage": "instances", "message": "Task 10/12: input-first; 0 examples retained"}
+{"time": "2026-11-10T10:03:01.413055+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 103 (char 102)", "request_key": "66aac55ba0a66de715ebb4805016d160c31171d01b7e8f4b85771ed1041c7d11"}
+{"time": "2026-11-10T10:03:01.969279+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 103 (char 102)", "request_key": "0e8b59be019d2a459d1325c80cd864fff3706b25c89e37e6dadb2d70c6514cbf"}
+{"time": "2026-11-10T10:03:01.970369+00:00", "stage": "instances", "message": "Task 11/12: output-first; 0 examples retained"}
+{"time": "2026-11-10T10:03:03.049775+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 232 (char 231)", "request_key": "a9b3d2dab88b58e56b2f9756246c010205c339e81e94c9eb25f89af0dfc9d64a"}
+{"time": "2026-11-10T10:03:03.954701+00:00", "stage": "instances", "message": "Response rejected: Expecting property name enclosed in double quotes: line 1 column 232 (char 231)", "request_key": "819a5dbf37eb8b6b2e1b254bc3e9f66d491ee2fbd187680a6535cb5371322b70"}
+{"time": "2026-11-10T10:03:03.956127+00:00", "stage": "instances", "message": "Task 12/12: input-first; 0 examples retained"}
+{"time": "2026-11-10T10:03:03.961664+00:00", "stage": "dataset", "message": "Prepared train/valid/test: 158/17/6 instances; task overlap=0"}
+{"time": "2026-11-10T10:03:04.885820+00:00", "stage": "evaluate", "message": "Evaluating the base model on held-out tasks"}
+{"time": "2026-11-10T10:03:10.428243+00:00", "stage": "evaluate", "message": "base: 1 test examples decoded"}
+{"time": "2026-11-10T10:03:11.482767+00:00", "stage": "evaluate", "message": "base: 2 test examples decoded"}
+{"time": "2026-11-10T10:03:11.817997+00:00", "stage": "evaluate", "message": "base: 3 test examples decoded"}
+{"time": "2026-11-10T10:03:12.033178+00:00", "stage": "evaluate", "message": "base: 4 test examples decoded"}
+{"time": "2026-11-10T10:03:12.301556+00:00", "stage": "evaluate", "message": "base: 5 test examples decoded"}
+{"time": "2026-11-10T10:03:13.631889+00:00", "stage": "evaluate", "message": "base: 6 test examples decoded"}
+{"time": "2026-11-10T10:03:13.637348+00:00", "stage": "train", "message": "LoRA: 20 steps, batch=1, 155,648 trainable parameters"}
+{"time": "2026-11-10T10:03:27.636709+00:00", "stage": "evaluate", "message": "Reloaded saved LoRA adapter; evaluating the same held-out tasks"}
+{"time": "2026-11-10T10:03:28.926911+00:00", "stage": "evaluate", "message": "adapted: 1 test examples decoded"}
+{"time": "2026-11-10T10:03:30.064407+00:00", "stage": "evaluate", "message": "adapted: 2 test examples decoded"}
+{"time": "2026-11-10T10:03:30.435040+00:00", "stage": "evaluate", "message": "adapted: 3 test examples decoded"}
+{"time": "2026-11-10T10:03:30.666756+00:00", "stage": "evaluate", "message": "adapted: 4 test examples decoded"}
+{"time": "2026-11-10T10:03:30.927649+00:00", "stage": "evaluate", "message": "adapted: 5 test examples decoded"}
+{"time": "2026-11-10T10:03:32.351442+00:00", "stage": "evaluate", "message": "adapted: 6 test examples decoded"}
+{"time": "2026-11-10T10:03:36.224833+00:00", "stage": "complete", "message": "Artifacts saved to experiments/m1-2026-11-10"}

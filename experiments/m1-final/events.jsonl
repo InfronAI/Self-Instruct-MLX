@@ -1,0 +1,37 @@
+{"time": "2026-11-10T10:22:21.043568+00:00", "stage": "instructions", "message": "Bootstrapping 12 tasks from 151 training seeds"}
+{"time": "2026-11-10T10:22:28.535124+00:00", "stage": "instructions", "message": "Round 1: 6/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:22:32.586906+00:00", "stage": "instructions", "message": "Round 2: 9/12 accepted; 1 filtered"}
+{"time": "2026-11-10T10:22:35.724789+00:00", "stage": "instructions", "message": "Round 3: 12/12 accepted; 1 filtered"}
+{"time": "2026-11-10T10:22:39.309315+00:00", "stage": "instances", "message": "Task 1/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:22:42.075597+00:00", "stage": "instances", "message": "Task 2/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:22:44.840483+00:00", "stage": "instances", "message": "Task 3/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:22:47.300114+00:00", "stage": "instances", "message": "Task 4/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:22:50.197513+00:00", "stage": "instances", "message": "Task 5/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:22:52.477198+00:00", "stage": "instances", "message": "Task 6/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:22:55.765141+00:00", "stage": "instances", "message": "Task 7/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:22:58.036555+00:00", "stage": "instances", "message": "Task 8/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:23:00.317398+00:00", "stage": "instances", "message": "Task 9/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:23:02.731432+00:00", "stage": "instances", "message": "Task 10/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:23:06.147196+00:00", "stage": "instances", "message": "Task 11/12: output-first; 2 examples retained"}
+{"time": "2026-11-10T10:23:08.381241+00:00", "stage": "instances", "message": "Task 12/12: input-first; 1 examples retained"}
+{"time": "2026-11-10T10:23:08.385877+00:00", "stage": "dataset", "message": "Prepared train/valid/test: 16/19/8 instances; task overlap=0"}
+{"time": "2026-11-10T10:23:10.492102+00:00", "stage": "evaluate", "message": "Evaluating the base model on held-out tasks"}
+{"time": "2026-11-10T10:23:17.970863+00:00", "stage": "evaluate", "message": "base: 1 test examples decoded"}
+{"time": "2026-11-10T10:23:21.151013+00:00", "stage": "evaluate", "message": "base: 2 test examples decoded"}
+{"time": "2026-11-10T10:23:24.121046+00:00", "stage": "evaluate", "message": "base: 3 test examples decoded"}
+{"time": "2026-11-10T10:23:27.385705+00:00", "stage": "evaluate", "message": "base: 4 test examples decoded"}
+{"time": "2026-11-10T10:23:30.461203+00:00", "stage": "evaluate", "message": "base: 5 test examples decoded"}
+{"time": "2026-11-10T10:23:31.822328+00:00", "stage": "evaluate", "message": "base: 6 test examples decoded"}
+{"time": "2026-11-10T10:23:33.067720+00:00", "stage": "evaluate", "message": "base: 7 test examples decoded"}
+{"time": "2026-11-10T10:23:37.470566+00:00", "stage": "evaluate", "message": "base: 8 test examples decoded"}
+{"time": "2026-11-10T10:23:37.482615+00:00", "stage": "train", "message": "LoRA: 20 steps, batch=1, 327,680 trainable parameters"}
+{"time": "2026-11-10T10:24:17.510148+00:00", "stage": "evaluate", "message": "Reloaded saved LoRA adapter; evaluating the same held-out tasks"}
+{"time": "2026-11-10T10:24:24.913579+00:00", "stage": "evaluate", "message": "adapted: 1 test examples decoded"}
+{"time": "2026-11-10T10:24:28.173173+00:00", "stage": "evaluate", "message": "adapted: 2 test examples decoded"}
+{"time": "2026-11-10T10:24:31.276311+00:00", "stage": "evaluate", "message": "adapted: 3 test examples decoded"}
+{"time": "2026-11-10T10:24:34.637314+00:00", "stage": "evaluate", "message": "adapted: 4 test examples decoded"}
+{"time": "2026-11-10T10:24:37.814964+00:00", "stage": "evaluate", "message": "adapted: 5 test examples decoded"}
+{"time": "2026-11-10T10:24:38.938519+00:00", "stage": "evaluate", "message": "adapted: 6 test examples decoded"}
+{"time": "2026-11-10T10:24:40.215979+00:00", "stage": "evaluate", "message": "adapted: 7 test examples decoded"}
+{"time": "2026-11-10T10:24:44.860255+00:00", "stage": "evaluate", "message": "adapted: 8 test examples decoded"}
+{"time": "2026-11-10T10:24:45.633973+00:00", "stage": "complete", "message": "Artifacts saved to experiments/m1-final"}

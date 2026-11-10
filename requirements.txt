@@ -1,10 +1,2 @@
-################################
-###### Core dependencies #######
-################################
-rouge-score
-tqdm
-numpy
-openai==0.24.0
-benepar
-spacy
-plotly
+# Local Apple Silicon runtime. See pyproject.toml for other optional extras.
+-e .[mlx,viz]

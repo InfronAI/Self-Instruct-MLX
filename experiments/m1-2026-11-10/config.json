@@ -1,0 +1,23 @@
+{
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+  "revision": "8b403126fc14f14cfc99bb4cfa72ecbc129ea677",
+  "seed_tasks": "data/seed_tasks.jsonl",
+  "seed": 42,
+  "num_instructions": 12,
+  "instructions_per_request": 4,
+  "prompt_examples": 6,
+  "instances_per_instruction": 2,
+  "max_rounds": 12,
+  "max_attempts": 2,
+  "rouge_threshold": 0.7,
+  "generation_max_tokens": 768,
+  "eval_tasks": 8,
+  "validation_tasks": 16,
+  "include_seed_tasks": true,
+  "train_iters": 20,
+  "learning_rate": 1e-05,
+  "lora_layers": 4,
+  "lora_rank": 8,
+  "max_seq_length": 512,
+  "eval_max_tokens": 128
+}

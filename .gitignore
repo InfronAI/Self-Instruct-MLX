@@ -130,3 +130,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Local runs and downloaded model weights; curated experiments remain versioned.
+runs/
+models/
+.DS_Store
+.run.lock
+*.safetensors
+*.npz
+*.cast.tmp
+experiments/**/requests/
+!experiments/m1-final/adapters/adapters.safetensors
+.venv-*/

@@ -1,4 +1,4 @@
-output_first_template_for_clf = '''Given the classification task definition and the class labels, generate an input that corresponds to each of the class labels. If the task doesn't require input, just generate possible class labels.
+output_first_template_for_clf = """Given the classification task definition and the class labels, generate an input that corresponds to each of the class labels. If the task doesn't require input, just generate possible class labels.
 
 Task: Classify the sentiment of the sentence into positive, negative, or mixed.
 Class label: mixed
@@ -138,9 +138,9 @@ List: 2, 9, 10
 Task: Which of the following is not an input type? (a) number (b) date (c) phone number (d) email address (e) all of these are valid inputs.
 Class label: (e)
 
-Task:'''
+Task:"""
 
-input_first_template_for_gen = '''Come up with examples for the following tasks. Try to generate multiple examples when possible. If the task doesn't require additional input, you can generate the output directly.
+input_first_template_for_gen = """Come up with examples for the following tasks. Try to generate multiple examples when possible. If the task doesn't require additional input, you can generate the output directly.
 
 Task: Which exercises are best for reducing belly fat at home?
 Output:
@@ -234,4 +234,4 @@ I would love to stay in touch with you and have already started following you on
 Thanks again,
 [Your Name]
 
-Task:'''
+Task:"""

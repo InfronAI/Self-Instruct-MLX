@@ -1,11 +1,4 @@
-TRAIN_FILE=$1
-EXPERIMENT_NAME=$2
-
-openai tools fine_tunes.prepare_data -f $TRAIN_FILE
-
-openai api fine_tunes.create \
-    --training_file $TRAIN_FILE \
-    --model davinci \
-    --suffix $EXPERIMENT_NAME \
-    --n_epochs 2 \
-    --prompt_loss_weight 0
+#!/usr/bin/env bash
+# Optional cloud upload + paid fine-tuning job. Local training: run_m1_demo.sh.
+set -euo pipefail
+exec python -m self_instruct.finetune_api "$@"

@@ -1,0 +1,14 @@
+{
+  "train": {
+    "accepted": 16,
+    "rejected": []
+  },
+  "valid": {
+    "accepted": 19,
+    "rejected": []
+  },
+  "test": {
+    "accepted": 8,
+    "rejected": []
+  }
+}

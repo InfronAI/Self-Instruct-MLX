@@ -1,0 +1,25 @@
+{
+  "train": {
+    "accepted": 156,
+    "rejected": [
+      {
+        "row": 22,
+        "reason": "sequence_too_long",
+        "tokens": 778
+      },
+      {
+        "row": 153,
+        "reason": "sequence_too_long",
+        "tokens": 1366
+      }
+    ]
+  },
+  "valid": {
+    "accepted": 17,
+    "rejected": []
+  },
+  "test": {
+    "accepted": 6,
+    "rejected": []
+  }
+}

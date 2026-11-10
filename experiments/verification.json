@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-11-10T10:33:14.489033+00:00",
+  "environment": {
+    "python": "3.11.16",
+    "system": "Darwin",
+    "os_version": "26.6.1",
+    "architecture": "arm64",
+    "packages": {
+      "mlx": "0.29.3",
+      "mlx-lm": "0.28.3",
+      "transformers": "4.57.1",
+      "huggingface-hub": "0.36.0",
+      "numpy": "2.4.6",
+      "rouge-score": "0.1.2"
+    },
+    "chip": "Apple M1 Pro",
+    "memory_bytes": 17179869184,
+    "git_commit": "0b26ccaa415992100fa32df62d41b994cf928e23",
+    "git_dirty": true
+  },
+  "clean_environment": ".venv-check",
+  "installation": "python -m pip install -r requirements-macos.lock.txt",
+  "pip_check": "No broken requirements found",
+  "unit_tests": {
+    "command": ".venv-check/bin/python -m pytest -q",
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0
+  },
+  "static_checks": {
+    "ruff": "passed",
+    "compileall": "passed",
+    "bash_syntax": "passed",
+    "git_diff_check": "passed"
+  },
+  "original_data_and_human_eval": "git diff --exit-code -- data human_eval passed; original files unchanged",
+  "replay_exact_matches": {
+    "instructions.jsonl": true,
+    "classifications.jsonl": true,
+    "instances.jsonl": true,
+    "dataset/train.jsonl": true,
+    "dataset/valid.jsonl": true,
+    "dataset/test.jsonl": true
+  },
+  "manifest_hash_verification": true,
+  "regenerated_analysis_hashes": "analysis regenerated in clean environment and completed-run hash verification passed",
+  "offline_adapter_inference": {
+    "HF_HUB_OFFLINE": "1",
+    "max_tokens": 32,
+    "prompt": "Classify this review as positive, negative, or mixed. Return only the label. Review: Great food, slow service.",
+    "output": "Mixed"
+  },
+  "openai_verification": "Real OpenAI 2.54.0 SDK with in-memory HTTP transport; no live/paid API calls",
+  "readme_local_links": "No broken links in English/Chinese README and experiment reports",
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 900,
+        "pix_fmt": "yuv420p"
+      }
+    ],
+    "format": {
+      "duration": "47.200000",
+      "size": "2872976"
+    }
+  },
+  "video_sha256": "c98afbadaf7db997e9174c881ef236dbe540ca5f085219930c455186dae5ec3a",
+  "limits": [
+    "Only M1 Pro 16 GB / macOS 26.6.1 physically tested; no 8 GB M1 hardware test.",
+    "Eight held-out tasks; six outputs in each arm hit the 128-token cap; no general quality gain claimed.",
+    "2/19 generated instances lack required inputs; see quality_review.jsonl.",
+    "GitHub Actions configured but not executed on hosted CI in this session."
+  ]
+}

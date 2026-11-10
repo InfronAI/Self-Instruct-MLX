@@ -1,0 +1,80 @@
+{
+  "generation": {
+    "seed_tasks": 175,
+    "train_seed_tasks": 151,
+    "accepted_instructions": 12,
+    "rejected_instructions": 1,
+    "instruction_rejection_reasons": {
+      "rouge_overlap": 1
+    },
+    "classification_tasks": 7,
+    "generation_tasks": 5,
+    "generated_instances": 19,
+    "instance_rejections": 0,
+    "splits": {
+      "train": {
+        "instances": 16,
+        "tasks": 10,
+        "generated_instances": 16
+      },
+      "valid": {
+        "instances": 19,
+        "tasks": 18,
+        "generated_instances": 3
+      },
+      "test": {
+        "instances": 8,
+        "tasks": 8,
+        "generated_instances": 0
+      }
+    },
+    "task_overlap": 0
+  },
+  "inference": {
+    "requests": 27,
+    "output_tokens": 1089,
+    "recorded_request_seconds": 43.326652250951156,
+    "output_tokens_per_wall_second": 25.13464446069897,
+    "mean_decode_tokens_per_second": 53.241090133422766,
+    "peak_memory_gb": 3.001861366
+  },
+  "evaluation": {
+    "base": {
+      "examples": 8,
+      "rouge_l": 0.19367865169925394,
+      "exact_match": 0.0,
+      "nonempty_rate": 1.0,
+      "truncated_outputs": 6,
+      "test_loss": 3.0049126148223877,
+      "perplexity": 20.184452196978985,
+      "loss_examples": 8
+    },
+    "adapted": {
+      "examples": 8,
+      "rouge_l": 0.20032909114255304,
+      "exact_match": 0.0,
+      "nonempty_rate": 1.0,
+      "truncated_outputs": 6,
+      "test_loss": 2.5867903232574463,
+      "perplexity": 13.287055933714367,
+      "loss_examples": 8
+    },
+    "delta": {
+      "test_loss": -0.4181222915649414,
+      "perplexity": -6.897396263264618,
+      "rouge_l": 0.0066504394432991,
+      "exact_match": 0.0
+    },
+    "method": "Greedy decoding; identical held-out seed tasks and prompts; assistant-only token loss. ROUGE-L and exact match are lexical proxies, not human judgments. Loss excludes overlength examples; generation includes all held-out examples."
+  },
+  "training": {
+    "iterations": 20,
+    "trainable_parameters": 327680,
+    "elapsed_seconds": 37.74994754092768,
+    "peak_memory_gb": 2.925051554,
+    "batch_size": 1,
+    "max_seq_length": 512,
+    "adapter_sha256": "63548cb7d9f4110dd5365322ed5a44b94f89a5f16bf65b2a37315d85133ff0ed",
+    "adapter_reloaded": true
+  }
+}

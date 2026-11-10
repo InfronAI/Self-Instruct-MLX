@@ -1,0 +1,39 @@
+{
+  "started_at": "2026-11-10T10:22:20.385473+00:00",
+  "commands": [
+    [
+      "/Users/apple/Projects/self-instruct/.venv/bin/python",
+      "-m",
+      "self_instruct",
+      "doctor"
+    ],
+    [
+      "/Users/apple/Projects/self-instruct/.venv/bin/python",
+      "-u",
+      "-m",
+      "self_instruct",
+      "run",
+      "--config",
+      "configs/m1_demo.json",
+      "--output",
+      "experiments/m1-final"
+    ],
+    [
+      "/Users/apple/Projects/self-instruct/.venv/bin/python",
+      "-m",
+      "self_instruct",
+      "chat",
+      "--run",
+      "experiments/m1-final",
+      "--prompt",
+      "Classify this review as positive, negative, or mixed. Return only the label. Review: The food was delicious but the service was painfully slow.",
+      "--max-tokens",
+      "64"
+    ]
+  ],
+  "run": "experiments/m1-final",
+  "description": "Real local generation, LoRA training, held-out evaluation, and saved-adapter inference.",
+  "elapsed_seconds": 150.6527028749697,
+  "exit_code": 0,
+  "cast_sha256": "50703683efa93ade6c7265ec01b45f3e7ec6d140ac168d290938854715c5457e"
+}

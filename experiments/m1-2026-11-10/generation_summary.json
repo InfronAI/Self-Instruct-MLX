@@ -1,0 +1,29 @@
+{
+  "seed_tasks": 175,
+  "train_seed_tasks": 151,
+  "accepted_instructions": 12,
+  "rejected_instructions": 0,
+  "instruction_rejection_reasons": {},
+  "classification_tasks": 3,
+  "generation_tasks": 9,
+  "generated_instances": 8,
+  "instance_rejections": 7,
+  "splits": {
+    "train": {
+      "instances": 158,
+      "tasks": 156,
+      "generated_instances": 7
+    },
+    "valid": {
+      "instances": 17,
+      "tasks": 17,
+      "generated_instances": 1
+    },
+    "test": {
+      "instances": 6,
+      "tasks": 6,
+      "generated_instances": 0
+    }
+  },
+  "task_overlap": 0
+}

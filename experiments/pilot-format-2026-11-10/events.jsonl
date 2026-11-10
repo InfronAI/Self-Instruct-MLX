@@ -1,0 +1,31 @@
+{"time": "2026-11-10T10:01:18.010493+00:00", "stage": "instructions", "message": "Bootstrapping 12 tasks from 151 training seeds"}
+{"time": "2026-11-10T10:01:25.123835+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "84f1cb2ccfc04d532cbe7fca6e9fdd6f4d132a8ed6d67248b2cf5c491c167497"}
+{"time": "2026-11-10T10:01:27.277699+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "392e040a54b97160c5cf9893d7b7c14fe54740b558f14e8b27f28d399f6627c0"}
+{"time": "2026-11-10T10:01:27.278145+00:00", "stage": "instructions", "message": "Round 1: 0/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:29.587234+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "657230a585a67fc5b1bb8e25ab9f1b9d39009a92d89fba11bfb26c86e997ee16"}
+{"time": "2026-11-10T10:01:31.199267+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "6e2c7f01634069015e4292b7387eb88ed68dd2893b684d3994f58f66fa5281f1"}
+{"time": "2026-11-10T10:01:31.199692+00:00", "stage": "instructions", "message": "Round 2: 0/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:32.844932+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "39bc05ec844e3590ab79e902ba26c8379bcc559ff16ae081bccd2b9113012f4c"}
+{"time": "2026-11-10T10:01:34.595248+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "0fb03235ea7696a6f5e773ab19368eb3241edaaba65e78b935d0f18bb20e1802"}
+{"time": "2026-11-10T10:01:34.595719+00:00", "stage": "instructions", "message": "Round 3: 0/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:35.371008+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "21e655625ba42d7c693d9a2daf6b45b1ae4119959e3057f8a786dea7c8462b1f"}
+{"time": "2026-11-10T10:01:36.703027+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "04f5721edeb98aa2173c4b44854d1cc044963b0d4051a2bf3a41c9503f88b984"}
+{"time": "2026-11-10T10:01:36.703438+00:00", "stage": "instructions", "message": "Round 4: 0/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:37.613988+00:00", "stage": "instructions", "message": "Round 5: 4/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:38.406243+00:00", "stage": "instructions", "message": "Round 6: 6/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:39.516228+00:00", "stage": "instructions", "message": "Round 7: 10/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:40.264575+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "659eea601ceac127a028a46f4e0dca5007f976d4510f6e5c8565f023c5421103"}
+{"time": "2026-11-10T10:01:41.415536+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "92c8e745d1bdeca5fdf6add22a21c9db8d547ecd52d73bd47f82db582724ad7a"}
+{"time": "2026-11-10T10:01:41.416249+00:00", "stage": "instructions", "message": "Round 8: 10/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:42.186749+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "f75b32a8f42479433d91ff8a508d62caae48c1420c1349c670fab2f1cb9a6abd"}
+{"time": "2026-11-10T10:01:43.464018+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "7d2ffcae9778ed8e71421e50fc03a663f87965f43e79bdc4ded255af0b7aadac"}
+{"time": "2026-11-10T10:01:43.464777+00:00", "stage": "instructions", "message": "Round 9: 10/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:44.464100+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "551c74266fc8827697ca3e4ca627fb9796a3a1e7506e41eb6fd94cb384dbde2b"}
+{"time": "2026-11-10T10:01:45.882741+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "69c12c4faba2df8aee608924ff2d7f97eaa448f08b6ce8c81ec5e90d5222f563"}
+{"time": "2026-11-10T10:01:45.883369+00:00", "stage": "instructions", "message": "Round 10: 10/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:47.726219+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "ca30cb9d432e36160eebc5120789fa05c401855182e0144b5b9f1839e50b8b79"}
+{"time": "2026-11-10T10:01:49.716389+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "e9a3b511abd4f7c8d7f55e672b56dbbd3091231ba2c8ce08e89c3df34c01346f"}
+{"time": "2026-11-10T10:01:49.717125+00:00", "stage": "instructions", "message": "Round 11: 10/12 accepted; 0 filtered"}
+{"time": "2026-11-10T10:01:51.186418+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "270f9a9b84709e01ef30d0fe09a793e493556259dd325f3eef28c7737ce9fb12"}
+{"time": "2026-11-10T10:01:54.841845+00:00", "stage": "instructions", "message": "Response rejected: invalid_schema", "request_key": "07477541cd525e314952bad1b0e4f817d4f2de07e183a756b3a0375ba647db3a"}
+{"time": "2026-11-10T10:01:54.842589+00:00", "stage": "instructions", "message": "Round 12: 10/12 accepted; 0 filtered"}

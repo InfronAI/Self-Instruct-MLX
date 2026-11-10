@@ -1,0 +1,38 @@
+{
+  "environment": {
+    "python": "3.11.16",
+    "system": "Darwin",
+    "os_version": "26.6.1",
+    "architecture": "arm64",
+    "packages": {
+      "mlx": "0.29.3",
+      "mlx-lm": "0.28.3",
+      "transformers": "4.57.1",
+      "huggingface-hub": "0.36.0",
+      "numpy": "2.4.6",
+      "rouge-score": "0.1.2"
+    },
+    "chip": "Apple M1 Pro",
+    "memory_bytes": 17179869184,
+    "git_commit": "0b26ccaa415992100fa32df62d41b994cf928e23",
+    "git_dirty": true
+  },
+  "seed_instructions": 175,
+  "candidates": 12,
+  "workers_in_original": 4,
+  "start_method": "spawn",
+  "repetitions": [
+    {
+      "original_seconds": 3.6467646250966936,
+      "optimized_seconds": 0.042789499973878264,
+      "speedup": 85.22568918363001
+    },
+    {
+      "original_seconds": 4.064463041955605,
+      "optimized_seconds": 0.04213474993593991,
+      "speedup": 96.46344283839497
+    }
+  ],
+  "max_score_difference": 5.551115123125783e-17,
+  "scope": "Small 175-seed pool; includes process startup and tokenization. Not an asymptotic or 52K-pool benchmark."
+}

@@ -1,0 +1,55 @@
+{
+  "identity": {
+    "schema_version": 1,
+    "config": {
+      "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+      "revision": "8b403126fc14f14cfc99bb4cfa72ecbc129ea677",
+      "seed_tasks": "data/seed_tasks.jsonl",
+      "seed": 42,
+      "num_instructions": 12,
+      "instructions_per_request": 4,
+      "prompt_examples": 6,
+      "instances_per_instruction": 2,
+      "max_rounds": 12,
+      "max_attempts": 2,
+      "rouge_threshold": 0.7,
+      "generation_max_tokens": 768,
+      "eval_tasks": 8,
+      "validation_tasks": 16,
+      "include_seed_tasks": true,
+      "train_iters": 20,
+      "learning_rate": 1e-05,
+      "lora_layers": 4,
+      "lora_rank": 8,
+      "max_seq_length": 512,
+      "eval_max_tokens": 128
+    },
+    "train": true,
+    "mode": "mlx",
+    "seed_sha256": "7779004fa198fdf27cf70a159363879d8a26c53329e11b436af17b3941875f48",
+    "replay_sha256": null
+  },
+  "created_at": "2026-11-10T10:01:17.949149+00:00",
+  "environment": {
+    "python": "3.11.16",
+    "system": "Darwin",
+    "os_version": "26.6.1",
+    "architecture": "arm64",
+    "packages": {
+      "mlx": "0.29.3",
+      "mlx-lm": "0.28.3",
+      "transformers": "4.57.1",
+      "huggingface-hub": "0.36.0",
+      "numpy": "2.4.6",
+      "rouge-score": "0.1.2"
+    },
+    "chip": "Apple M1 Pro",
+    "memory_bytes": 17179869184,
+    "git_commit": "0b26ccaa415992100fa32df62d41b994cf928e23",
+    "git_dirty": true
+  },
+  "status": "failed",
+  "last_started_at": "2026-11-10T10:01:18.006861+00:00",
+  "error": "RuntimeError: Generation budget exhausted: 10/12 instructions. Inspect requests and rejections; use a new run/config for a larger budget.",
+  "stopped_at": "2026-11-10T10:01:54.842715+00:00"
+}

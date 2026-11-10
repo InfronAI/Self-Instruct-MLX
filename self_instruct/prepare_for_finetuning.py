@@ -1,14 +1,10 @@
-import os
-import json
 import argparse
-import glob
-import re
+import json
+import os
 import random
+import re
+
 import tqdm
-import pandas as pd
-
-
-random.seed(123)
 
 
 def parse_args():
@@ -18,7 +14,7 @@ def parse_args():
         nargs="+",
         default=["data/batch_221203/machine_generated_instances.jsonl"],
         type=str,
-        help="The input files that contain the machine generated instances."
+        help="The input files that contain the machine generated instances.",
     )
     parser.add_argument(
         "--classification_type_files",
@@ -29,17 +25,13 @@ def parse_args():
         "--output_dir",
         default="data/gpt3_generations/batch_221203/finetuning/",
         type=str,
-        help="The output dir to save the cleaned version of the generated instances, so that it can be used for GPT3 finetuning."
+        help="The output dir to save the cleaned version of the generated instances, so that it can be used for GPT3 finetuning.",
     )
-    parser.add_argument(
-        "--num_instructions",
-        type=int,
-        help="The number of instructions to load."
-    )
+    parser.add_argument("--num_instructions", type=int, help="The number of instructions to load.")
     parser.add_argument(
         "--include_seed_tasks",
         action="store_true",
-        help="Whether to include the seed human-written instances in the finetuning data."
+        help="Whether to include the seed human-written instances in the finetuning data.",
     )
     parser.add_argument(
         "--seed_tasks_path",
@@ -121,8 +113,9 @@ def filter_duplicate_instances(instances):
         return []
 
     # remove duplicate instances
-    instances = list(set(instances))
+    instances = list(dict.fromkeys(instances))
     return instances
+
 
 def filter_invalid_instances(instances):
     filtered_instances = []
@@ -139,10 +132,11 @@ def filter_invalid_instances(instances):
         filtered_instances.append(instance)
     return filtered_instances
 
+
 def parse_instances_for_generation_task(raw_text, instruction, response_metadata):
     instances = []
     raw_text = raw_text.strip()
-    if re.findall("Example\s?\d*\.?", raw_text):
+    if re.findall(r"Example\s?\d*\.?", raw_text):
         instance_texts = re.split(r"Example\s?\d*\.?", raw_text)
         instance_texts = [it.strip() for it in instance_texts if it.strip() != ""]
         for instance_text in instance_texts:
@@ -157,14 +151,15 @@ def parse_instances_for_generation_task(raw_text, instruction, response_metadata
     # if the generation stops because of length, we remove the last instance
     if response_metadata["response"]["choices"][0]["finish_reason"] == "length":
         instances = instances[:-1]
-    
+
     instances = filter_invalid_instances(instances)
     instances = filter_duplicate_instances(instances)
     return instances
 
+
 def parse_instances_for_classification_task(raw_text, instruction, response_metadata):
     instances = []
-    if not "Class label:" in raw_text:
+    if "Class label:" not in raw_text:
         return []
     instance_texts = raw_text.split("Class label:")[1:]
     for instance_text in instance_texts:
@@ -193,9 +188,10 @@ def parse_instances_for_classification_task(raw_text, instruction, response_meta
 
 if __name__ == "__main__":
     args = parse_args()
+    random.seed(123)
 
     training_instances = []
-    
+
     generated_tasks = []
     for instance_file in args.instance_files:
         with open(instance_file) as fin:
@@ -208,7 +204,11 @@ if __name__ == "__main__":
         with open(file) as fin:
             for line in fin:
                 data = json.loads(line)
-                task_clf_types[data["instruction"]] = data["is_classification"].strip() in ["Yes", "yes", "YES"]
+                task_clf_types[data["instruction"]] = data["is_classification"].strip() in [
+                    "Yes",
+                    "yes",
+                    "YES",
+                ]
 
     for task in tqdm.tqdm(generated_tasks):
         # get instruction
@@ -217,53 +217,77 @@ if __name__ == "__main__":
 
         # get the instances
         if task["is_classification"]:
-            task_instances = parse_instances_for_classification_task(task["raw_instances"], instruction, task["instance_metadata"])
+            task_instances = parse_instances_for_classification_task(
+                task["raw_instances"], instruction, task["instance_metadata"]
+            )
         else:
-            task_instances = parse_instances_for_generation_task(task["raw_instances"], instruction, task["instance_metadata"])
+            task_instances = parse_instances_for_generation_task(
+                task["raw_instances"], instruction, task["instance_metadata"]
+            )
 
         # we only allow max 5 instances per task
         task_instances = random.sample(task_instances, min(len(task_instances), 5))
-        
+
         if not task_instances:
             continue
 
         training_instances += task_instances
 
-
     os.makedirs(args.output_dir, exist_ok=True)
     with open(os.path.join(args.output_dir, "all_generated_instances.jsonl"), "w") as fout:
         for instance in training_instances:
-            fout.write(json.dumps({
-                "instruction": instance[0],
-                "input": instance[1],
-                "output": instance[2],
-            }) + "\n")
+            fout.write(
+                json.dumps(
+                    {
+                        "instruction": instance[0],
+                        "input": instance[1],
+                        "output": instance[2],
+                    }
+                )
+                + "\n"
+            )
     print(f"Saved {len(training_instances)} instances")
     unique_instructions = set([it[0] for it in training_instances])
     print(f"Unique instructions: {len(unique_instructions)}")
-    clf_instructions = [instruction for instruction in unique_instructions if task_clf_types[instruction]]
+    clf_instructions = [
+        instruction for instruction in unique_instructions if task_clf_types[instruction]
+    ]
     print(f"Classification instructions: {len(clf_instructions)}")
-    non_clf_instructions = [instruction for instruction in unique_instructions if not task_clf_types[instruction]]
+    non_clf_instructions = [
+        instruction for instruction in unique_instructions if not task_clf_types[instruction]
+    ]
     print(f"Non-classification instructions: {len(non_clf_instructions)}")
 
     if args.num_instructions is not None:
         print(f"Sampling {args.num_instructions} instructions")
-        sampled_instructions = random.sample(unique_instructions, args.num_instructions)
+        sampled_instructions = random.sample(sorted(unique_instructions), args.num_instructions)
         training_instances = [it for it in training_instances if it[0] in sampled_instructions]
         print(f"Only using {len(training_instances)} instances for these sampled instructions.")
-        with open(os.path.join(args.output_dir, f"sampled_generated_instances_{args.num_instructions}.jsonl"), "w") as fout:
+        with open(
+            os.path.join(
+                args.output_dir, f"sampled_generated_instances_{args.num_instructions}.jsonl"
+            ),
+            "w",
+        ) as fout:
             for instance in training_instances:
-                fout.write(json.dumps({
-                    "instruction": instance[0],
-                    "input": instance[1],
-                    "output": instance[2],
-                }) + "\n")
+                fout.write(
+                    json.dumps(
+                        {
+                            "instruction": instance[0],
+                            "input": instance[1],
+                            "output": instance[2],
+                        }
+                    )
+                    + "\n"
+                )
 
     if args.include_seed_tasks:
-        seed_tasks = [json.loads(l) for l in open(args.seed_tasks_path, "r")]
+        seed_tasks = [json.loads(line) for line in open(args.seed_tasks_path, "r")]
         for task in seed_tasks:
             for instance in task["instances"]:
-                training_instances.append((task["instruction"], instance["input"], instance["output"]))
+                training_instances.append(
+                    (task["instruction"], instance["input"], instance["output"])
+                )
         print(f"Included {len(seed_tasks)} seed tasks")
 
     # get the prompt and completion for training gpt3
@@ -281,7 +305,7 @@ if __name__ == "__main__":
                 inst_input = inst_input.strip()
             # we also replace two consecutive new lines with one new line half of the time
             inst_input = inst_input.replace("\n\n", "\n")
-        
+
         gpt3_instances.append(encode_instance(instance[0], inst_input, instance[2]))
 
     # remove duplicates
@@ -296,9 +320,16 @@ if __name__ == "__main__":
 
     # shuffle
     random.shuffle(gpt3_instances)
-    with open(os.path.join(args.output_dir, f"gpt3_finetuning_data_{len(gpt3_instances)}.jsonl"), "w") as fout:
+    with open(
+        os.path.join(args.output_dir, f"gpt3_finetuning_data_{len(gpt3_instances)}.jsonl"), "w"
+    ) as fout:
         for instance in gpt3_instances:
-            fout.write(json.dumps({
-                "prompt": instance["prompt"],
-                "completion": instance["completion"],
-            }) + "\n")
+            fout.write(
+                json.dumps(
+                    {
+                        "prompt": instance["prompt"],
+                        "completion": instance["completion"],
+                    }
+                )
+                + "\n"
+            )
