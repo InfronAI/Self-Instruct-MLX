@@ -10,13 +10,13 @@
 
 ## 演示视频
 
-[![M1 本地生成、训练、评估与推理实录](docs/assets/demo-poster.png)](docs/assets/demo.mp4)
+[![M1 本地生成、训练、评估与推理动态预览](docs/assets/demo.gif)](docs/assets/demo.mp4)
 
 **[观看或下载 MP4](docs/assets/demo.mp4)** · [GIF 预览](docs/assets/demo.gif) · [保留原始时间戳的终端记录](docs/assets/demo.cast)
 
-<video src="docs/assets/demo.mp4" controls preload="metadata" poster="docs/assets/demo-poster.png" width="960"></video>
+当 GitHub 的[动态图自动播放设置](https://docs.github.com/en/account-and-profile/how-tos/account-settings/managing-accessibility-settings#managing-motion)允许时，上方预览会自动循环播放。点击预览或 MP4 链接可查看完整分辨率录像。
 
-视频记录 **M1 Pro / 16 GB** 上实际执行的命令：环境检查 → 新指令生成 → 任务分类 → 实例生成 → LoRA → 留出集评估 → 加载适配器推理。等待时间经过压缩，画面底部显示原始运行时间。最后的评论分类示例返回 `Mixed`。如果 Markdown 阅读器不支持内嵌视频，请点击 MP4 链接。
+视频记录 **M1 Pro / 16 GB** 上实际执行的命令：环境检查 → 新指令生成 → 任务分类 → 实例生成 → LoRA → 留出集评估 → 加载适配器推理。等待时间经过压缩，画面底部显示原始运行时间。最后的评论分类示例返回 `Mixed`。
 
 ## M1 Mac 快速开始
 

@@ -10,13 +10,13 @@ The default path uses **MLX + a pinned 4-bit Qwen3-4B-Instruct-2507 model**. Gen
 
 ## Demo
 
-[![Recorded local run: generation, training, evaluation and inference](docs/assets/demo-poster.png)](docs/assets/demo.mp4)
+[![Animated local run: generation, training, evaluation and inference](docs/assets/demo.gif)](docs/assets/demo.mp4)
 
 **[Watch / download the MP4](docs/assets/demo.mp4)** · [Animated preview](docs/assets/demo.gif) · [Original timestamped terminal recording](docs/assets/demo.cast)
 
-<video src="docs/assets/demo.mp4" controls preload="metadata" poster="docs/assets/demo-poster.png" width="960"></video>
+The preview loops automatically when your GitHub [animated-image settings](https://docs.github.com/en/account-and-profile/how-tos/account-settings/managing-accessibility-settings#managing-motion) allow it. Click the preview or the MP4 link for the full-resolution recording.
 
-The video records real subprocess output on an **M1 Pro / 16 GB**: environment check → new instruction generation → classification → examples → LoRA → held-out evaluation → saved-adapter inference. Pauses are compressed; the on-screen clock shows original elapsed time. The final review-classification prompt returns `Mixed`. Renderers that do not support inline video can use the MP4 link.
+The video records real subprocess output on an **M1 Pro / 16 GB**: environment check → new instruction generation → classification → examples → LoRA → held-out evaluation → saved-adapter inference. Pauses are compressed; the on-screen clock shows original elapsed time. The final review-classification prompt returns `Mixed`.
 
 ## Quick start on an M1 Mac
 
